@@ -15,6 +15,10 @@ alias vim=nvim
 alias ls='ls --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+alias sleeping='systemctl suspend'
+alias us='setxkbmap us'
+alias fr='setxkbmap fr'
+
 export PATH="${PATH}:$HOME/.cargo/bin"
 
 # Enable starship prompt
