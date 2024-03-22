@@ -200,12 +200,19 @@ require('lazy').setup({
     },
   },
   {
-    'ellisonleao/gruvbox.nvim',
+   'ellisonleao/gruvbox.nvim',
     priority = 1000,
     lazy = false,
     config = function ()
       require('gruvbox').setup({
         transparent_mode = false,
+        italic = {
+        strings = false,
+        emphasis = false,
+        comments = false,
+        operators = false,
+        folds = false,
+      },
       })
       require('gruvbox').load()
     end,
