@@ -200,22 +200,7 @@ require('lazy').setup({
     },
   },
   {
-   'ellisonleao/gruvbox.nvim',
-    priority = 1000,
-    lazy = false,
-    config = function ()
-      require('gruvbox').setup({
-        transparent_mode = false,
-        italic = {
-        strings = false,
-        emphasis = false,
-        comments = false,
-        operators = false,
-        folds = false,
-      },
-      })
-      require('gruvbox').load()
-    end,
+    'nyoom-engineering/oxocarbon.nvim'
   },
   {
     -- Set lualine as statusline
@@ -230,17 +215,7 @@ require('lazy').setup({
       },
     },
   },
-
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help ibl`
-    main = 'ibl',
-    opts = {},
-  },
-
-  -- "gc" to comment visual regions/lines
+ -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
@@ -292,6 +267,8 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- Set ColorScheme
+vim.cmd('colorscheme oxocarbon')
 
 -- Set Indentation
 vim.opt.tabstop = 4
